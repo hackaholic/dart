@@ -89,4 +89,17 @@ const myList = [1, 2, 3]; // This will give an error unless the elements are als
 
    */
 
+
+
+  var x = 1;
+  var hex = 0xDEADBEEF;
+
+  // if number includes decimal then its type is double;
+  var y = 1.1;
+  var exponents = 1.42e5;
+
+  var n = int.parse('123'); // string to int
+  var m = double.parse('12.23'); // string to double
+
+
 }
