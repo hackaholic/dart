@@ -16,7 +16,7 @@ void test() => print("Hello");
 // you can define a function with required positional parameters.
 // These parameters must be provided in the same order as they are declared.
 void positional_paramater(int a, String b) {
-  print("func_paramater -> $a, $b");
+  print("func_parameter -> $a, $b");
 }
 
 /* Named Parameter:
