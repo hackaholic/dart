@@ -12,24 +12,26 @@ A future represents the result of an asynchronous operation, and can have two st
  */
 
 import 'dart:io';
-void countsec(int a) async{
-  print("I am countsec waiting $a sec");
-  //Future.delayed(Duration(seconds: a), () => print("countsec Delayed ...."));
-  sleep(Duration(seconds: a));
-  print("ok");
+import 'package:http/http.dart' as http;
+
+Future<String> getUserName() => Future.delayed(Duration(seconds: 5), () => 'Hackaholic');
+
+Future<void> getData() async {
+  print("Fetching data ...");
+  try {
+    var url = Uri.parse('https://jsonplaceholder.typicode.com/users/1');
+    var res = await http.get(url);
+    if (res.statusCode == 200) {
+      print(res.body);
+    }
+  } catch (err) {
+    print(err);
+  }
 }
 
-Future<void> fetch_user(int a) async {
-  print("I am fetch_user ...");
-  return Future.delayed(Duration(seconds: a), () => print("hello user"));
-}
-
-void main() async {
-  const int a = 5;
-  const int b = 2;
-  countsec(a);
-  // all the instruction before await executes immediately
-  // await fetch_user(a);
-  fetch_user(b);
-  print("Before Fetch User");
+void main() {
+  print("Start...");
+  getUserName().then((value) => print(value));
+  getData();
+  print("End...");
 }
