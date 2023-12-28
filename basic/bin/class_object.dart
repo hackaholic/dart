@@ -27,7 +27,7 @@ class Hackaholic extends Hako {
   }
   void display() {
     // Accessing parent class variables and methods using super
-    print(super.name);
+    print(super._name);
     super.info();
   }
 
