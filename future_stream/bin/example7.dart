@@ -13,6 +13,10 @@ void main(List<String> args) async {
   }
 }
 
+/*
+typedef declarations are typically done at the top level of a file, 
+outside the body of any function including main.
+*/
 typedef IsIncluded = bool Function(int value);
 
 bool isEven(int v) => v % 2 == 0;
