@@ -1,7 +1,5 @@
 // yield*
 
-import 'package:http/http.dart';
-
 Stream<String> maleNames() async* {
   yield 'Shiro';
   yield 'Niko';
@@ -26,8 +24,9 @@ Stream<String> getAllNames() async* {
   yield* maleNames();
   yield* femaleNames();
 }
+
 void main(List<String> args) async {
-  await for(var name in getAllNames()) {
+  await for (var name in getAllNames()) {
     print(name);
   }
 }

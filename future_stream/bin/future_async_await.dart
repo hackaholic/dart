@@ -11,10 +11,10 @@ A future represents the result of an asynchronous operation, and can have two st
 
  */
 
-import 'dart:io';
 import 'package:http/http.dart' as http;
 
-Future<String> getUserName() => Future.delayed(Duration(seconds: 5), () => 'Hackaholic');
+Future<String> getUserName() =>
+    Future.delayed(Duration(seconds: 5), () => 'Hackaholic');
 
 Future<void> getData() async {
   print("Fetching data ...");
