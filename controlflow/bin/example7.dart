@@ -1,5 +1,11 @@
 import 'dart:io';
 
+/*
+The syntax variable?.method is known as the "null-aware" or "conditional" access operator in Dart.
+If variable is not null, then variable.method is executed, and the result is returned.
+If variable is null, the entire expression evaluates to null without attempting to invoke method on a null object.
+
+*/
 void main(List<String> args) {
   do {
     stdout.write('Enter your age or type exit: ');

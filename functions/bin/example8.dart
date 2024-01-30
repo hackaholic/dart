@@ -1,4 +1,4 @@
-// mane parameter with required
+// name parameter with required
 // required named parameter cannot have default value
 void greet({required String name}) {
   print('Hello $name');

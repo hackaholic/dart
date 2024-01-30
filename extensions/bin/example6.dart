@@ -2,7 +2,8 @@
 
 /*
 
-In Dart, enums are special classes that have some implicit properties and methods. Here are the key properties and methods associated with enums in Dart:
+In Dart, enums are special classes that have some implicit properties and methods.
+ Here are the key properties and methods associated with enums in Dart:
 
     Name Property:
         Type: String

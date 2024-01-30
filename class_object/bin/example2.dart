@@ -1,3 +1,9 @@
+/*
+The colon is used in the initializer list, which allows you to initialize instance variables before the constructor body is executed. 
+It's often more concise and can be more efficient, especially when dealing with final fields or initializing multiple fields at once.
+
+*/
+
 class Person {
   final String name;
   final int age;
